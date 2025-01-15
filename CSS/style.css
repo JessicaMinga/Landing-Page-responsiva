@@ -230,6 +230,8 @@ p#sub{
   width: 100%;
   ;
 }
+
+
 p#tit{
   margin-top: 0;
   margin-bottom: 8%;
@@ -419,13 +421,32 @@ h1{
     div.inf, div.imagenes{
       width: 100%;
       height: 700px;
+      display: grid;
     }
+    div.inf{
+      height: 80px;
+      padding-bottom: 40px;
+    }
+    div#fil2{
+      grid: 1;
+    }
+    div#fil1{
+      display: none;
+    }
+   
+    p#amarillo {
+        content: "Worldwide gallery";
+    }
+ 
+  
     p#sub,p#tit{
       font-size: 25px;
     }
    
     footer{
-      display: none;
+      div#join{
+        display: none;
+      }
     }
     img#sobreimg{
       padding-top: 70%;
@@ -434,6 +455,18 @@ h1{
     div.galeria{
       display:flex;
       flex-direction: column;
+    }
+    div#gal4, div#gal5,div#gal6,div#gal7,div#gal8{
+      display: none;
+    }
+    div#gal1{
+      src: url('IMG/Mask group-18.jpg');
+    }
+    div#gal2{
+      src: url('IMG/Mask group-19.jpg');
+    }
+    div#gal3{
+      src: url('IMG/Mask group-20.jpg');
     }
     div#redes1{
       display: flex;
@@ -450,6 +483,18 @@ h1{
      div#redes{
       display:none
      }
+     div#datos{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      height: 100%;
+
+      p{
+        text-align: center;
+      }
+     }
     
   }
   
@@ -458,6 +503,10 @@ h1{
       all:unset ;
       padding: 5%;
     }
+    .inf{
+      display: none;
+    }
+
     div#logo.encabezad{
       padding: 2%;
       width: auto;
